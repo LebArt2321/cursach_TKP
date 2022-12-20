@@ -50,7 +50,7 @@
             <?php
                 if(!$_COOKIE["id"]){
                     ?>
-                    <div class="error">
+                    <div class="lalala">
                     Вы не вошли в аккаунт
                 </div>
             <?php
