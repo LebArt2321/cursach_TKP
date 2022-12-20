@@ -121,7 +121,7 @@ body {
   align-items: center;
   justify-content: space-between;
   border: 5px double #000000;
-  
+  box-shadow: 0 0 5px 2px #005f9e;
 }
 .wrapper .wrapper__body .body__header .header__logo-button {
   width: 0px;
@@ -129,6 +129,8 @@ body {
 .wrapper .wrapper__body .body__header .header__logo-button img {
   width: 95px;
   height: 95px;
+  box-shadow: 0 0 5px 2px #005f9e;
+  border-radius: 100px;
 }
 .wrapper .wrapper__body .body__header .header__logo img {
   height: 95px;
@@ -150,12 +152,14 @@ body {
   flex-direction: column;
   align-items: center;
   
+  
 }
 .wrapper .wrapper__body .body__header .header__menu .header__lk img {
   width: 50px;
   height: 50px;
   border-radius: 100px;
   border: 5px double #000000;
+  box-shadow: 0 0 5px 2px #005f9e;
 }
 .wrapper .wrapper__body .body__header .header__bucket {
   cursor: pointer;
@@ -169,6 +173,7 @@ body {
   height: 50px;
   border-radius: 100px;
   border: 5px double #000000;
+  box-shadow: 0 0 5px 2px #005f9e;
 }
 .wrapper .body__search {
   margin-top: 50px;
