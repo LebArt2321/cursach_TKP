@@ -71,10 +71,6 @@
                     <div class="item__name">
                       <?php echo $sneaker["name"]; ?>
                     </div>
-                    <div class="item__size">
-                      Размер: 
-                    <?php echo $userHistory["size"]; ?>
-                    </div>
                 </div>
                 <?php };?>
             </div>

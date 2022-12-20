@@ -2,11 +2,11 @@
 
     if($user = $_COOKIE["id"]){
         $id = $_POST["id"];
-        $size = $_POST["size"];
+        $colich = $_POST["colich"];
 
         $mysql = new mysqli('localhost', 'root', '', 'sneakerShop');
 
-        $mysql->query("INSERT INTO `purchase` (userId, sneakerId, size) VALUES ($user, $id, $size)");
+        $mysql->query("INSERT INTO `purchase` (userId, sneakerId, colich) VALUES ($user, $id, $colich)");
 
         $mysql->close();
 

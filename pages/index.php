@@ -131,7 +131,7 @@
                       <input type="text" name="id" value="1" style="display:none">
                         <div class="item__img"><img src="<?php echo $img1Id1; ?>" alt=""></div>
                         <div class="item__header"><?php echo $nameId1; ?></div>
-                        <div class="item__price"><?php echo $priceId1; ?> руб</div>
+                        <div class="item__price"><?php echo $priceId1; ?> ₽</div>
                     </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
@@ -139,7 +139,7 @@
                     <input type="text" name="id" value="2" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id2; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId2; ?></div>
-                    <div class="item__price"><?php echo $priceId2; ?> руб</div>
+                    <div class="item__price"><?php echo $priceId2; ?> ₽</div>
                   </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
@@ -147,7 +147,7 @@
                   <input type="text" name="id" value="3" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id3; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId3; ?></div>
-                    <div class="item__price"><?php echo $priceId3; ?> руб</div>
+                    <div class="item__price"><?php echo $priceId3; ?> ₽</div>
                 </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
@@ -155,7 +155,7 @@
                 <input type="text" name="id" value="4" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id4; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId4; ?></div>
-                    <div class="item__price"><?php echo $priceId4; ?> руб</div>
+                    <div class="item__price"><?php echo $priceId4; ?> ₽</div>
                 </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
@@ -163,7 +163,7 @@
                 <input type="text" name="id" value="5" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id5; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId5; ?></div>
-                    <div class="item__price"><?php echo $priceId5; ?> руб</div>
+                    <div class="item__price"><?php echo $priceId5; ?> ₽</div>
                 </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
@@ -171,7 +171,7 @@
                 <input type="text" name="id" value="6" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id6; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId6; ?></div>
-                    <div class="item__price"><?php echo $priceId6; ?> руб</div>
+                    <div class="item__price"><?php echo $priceId6; ?> ₽</div>
                 </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
@@ -179,7 +179,7 @@
                 <input type="text" name="id" value="7" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id7; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId7; ?></div>
-                    <div class="item__price"><?php echo $priceId7; ?> руб</div>
+                    <div class="item__price"><?php echo $priceId7; ?> ₽</div>
                 </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
@@ -187,7 +187,7 @@
                 <input type="text" name="id" value="8" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id8; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId8; ?></div>
-                    <div class="item__price"><?php echo $priceId8; ?> руб</div>
+                    <div class="item__price"><?php echo $priceId8; ?> ₽</div>
                 </button>
                 </form>
             </div>

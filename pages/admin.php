@@ -25,24 +25,9 @@
         <input name="id" type="text" value = "<?php echo $sneakers["id"];?>" style="display: none;">
         <div>Цена</div>
         <input name="price" type="text" value = "<?php echo $sneakers["price"];?>">
-        <div>Кол-во размера 36</div>
-        <input name="size36" type="text" value = "<?php echo $sneakers["size36"];?>">
-        <div>Кол-во размера 37</div>
-        <input name="size37" type="text" value = "<?php echo $sneakers["size37"];?>">
-        <div>Кол-во размера 38</div>
-        <input name="size38" type="text" value = "<?php echo $sneakers["size38"];?>">
-        <div>Кол-во размера 39</div>
-        <input name="size39" type="text" value = "<?php echo $sneakers["size39"];?>">
-        <div>Кол-во размера 40</div>
-        <input name="size40" type="text" value = "<?php echo $sneakers["size40"];?>">
-        <div>Кол-во размера 41</div>
-        <input name="size41" type="text" value = "<?php echo $sneakers["size41"];?>">
-        <div>Кол-во размера 42</div>
-        <input name="size42" type="text" value = "<?php echo $sneakers["size42"];?>">
-        <div>Кол-во размера 43</div>
-        <input name="size43" type="text" value = "<?php echo $sneakers["size43"];?>">
-        <div>Кол-во размера 44</div>
-        <input name="size44" type="text" value = "<?php echo $sneakers["size44"];?>">
+        <div>Кол-во </div>
+        <input name="colich" type="text" value = "<?php echo $sneakers["colich"];?>">
+       
         </div>
         <button action="submit">Изменить данные</button>
         </form>

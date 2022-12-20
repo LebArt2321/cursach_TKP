@@ -71,11 +71,6 @@
                     <div class="item__name">
                       <?php echo $sneaker["name"]; ?>
                     </div>
-                        </div>
-                        <div class="item__size">
-                            Размер
-                        <?php echo $userBusket["size"]; ?>
-                        </div>
                         <form action="/php/delete.php" method="POST">
                             <input type="text" name="delete" value=<?php echo $userBusket["id"]?> style="display:none">
                         <div class="delete__item">
@@ -107,7 +102,7 @@
     <?php 
         echo $price;  
     ?>
-    руб
+    ₽
 </div>
 <form action="/php/complite_purchase.php">
 <button action="submit" class="basket__complite">

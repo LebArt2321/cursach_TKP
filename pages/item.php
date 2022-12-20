@@ -10,22 +10,7 @@
     $name = $item['name'];
     $price = $item['price'];
     $img1 = $item['img1'];
-    $img2 = $item['img2'];
-    $img3 = $item['img3'];
-    $img4 = $item['img4'];
-    $img5 = $item['img5'];
-    $size36 = $item['size36'];
-    $size37 = $item['size37'];
-    $size38 = $item['size38'];
-    $size39 = $item['size39'];
-    $size40 = $item['size40'];
-    $size41 = $item['size41'];
-    $size42 = $item['size42'];
-    $size43 = $item['size43'];
-    $size44 = $item['size44'];
-    $size45 = $item['size45'];
-
-    $array = array($size36, $size37, $size38, $size39, $size40, $size41, $size42, $size43, $size44, $size45);
+    $colich = $item['colich']
 
 
 ?>
@@ -88,29 +73,45 @@
               
               <div class="item__body-info">
                 <div class="item__body-price">
-                  <?php echo $price ?> руб.
-                </div>
-                <div class="item__body-size">
-                  <div class="size__select">
-                    Выберите размер
-                  </div>
-                      <form action="../php/purchase.php" method="post">
+                  <?php echo $price ?> ₽
+                </div class = "item__body-colich">
+                <form action="../php/purchase.php" method="post">
                       <input type="text" name="id" value="<?php echo $id;?>" style="display:none" >
-                      <select required name="size">
+                      <select required name="colich"  style="display:none">
                       <?php
-                        $count = 36;
-                        for($i = 0; $i<count($array)-1; $i++){
-                          if($array[$i] > 0){
-                            echo '<option class="size" value=', $count, '>' ,  $count,  '</option>';
+                       ?>
+              </div>
+                <div class="item__body-colich">
+
+                      <?php
+                      if($colich == 0){
+                        echo '<p>Товар отсутсвует</p>';
+                      }
+                        $count = 1;
+
+                          if($colich > 0){
+                            echo '<option class="colich" value=', $count, '>' ,  $count,  '</option>';
                            
                           }
                           $count++;
-                        }
                       ?>
                       </select>
                       
-                      <button action="submit">Добавить в корзину</button>
+                      <button action="submit"
+                      <?php
+                      if($colich == 0)
+                        echo 'style="display:none"';
+                      
+                      ?>
+                      >Добавить в корзину</button>
                       </form>
+                      <div class="ostatok">
+                      <?php
+                      if($colich == 0)
+                        echo '<p>Товар отсутсвует</p>';
+                      
+                      ?>
+                      </div>
                 </div>
               </div>
             </div>
@@ -155,7 +156,6 @@
         </div>
     </div>
 
-    <script src="/js/size.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/popup.js"></script>
     <script src="/js/registration.js"></script>
