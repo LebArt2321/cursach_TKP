@@ -32,6 +32,16 @@
   $priceId8 = $itemId8["price"];
   $img1Id8 = $itemId8["img1"];
 
+  $nameId9 = $itemId9["name"];
+  $priceId9 = $itemId9["price"];
+  $img1Id9 = $itemId9["img1"];
+
+  $nameId10 = $itemId10["name"];
+  $priceId10 = $itemId10["price"];
+  $img1Id10 = $itemId10["img1"];
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -99,6 +109,14 @@
                     <label class="filter__checkbox" for="RAP">
                         <input data-sex="RAP" checked="checked" type="checkbox" id="RAP" />Рэп
                     </label>
+                    <label class="filter__checkbox" for="COUNTRY">
+                        <input data-sex="COUNTRY" checked="checked" type="checkbox" id="COUNTRY" />Кантри
+                    </label>
+                    <label class="filter__checkbox" for="Electronics">
+                        <input data-sex="Electronics" checked="checked" type="checkbox" id="Electronics" />Электроника
+                    </label>
+                    
+
                 </div>
               </div>
               <div class="filters__type filter brand">
@@ -121,6 +139,12 @@
                 </label>
                   <label class="filter__checkbox" for="ABBA">
                     <input data-brand="ABBA" checked="checked" type="checkbox" id="ABBA" />ABBA
+                </label>
+                <label class="filter__checkbox" for="GORILLAZ">
+                    <input data-brand="GORILLAZ" checked="checked" type="checkbox" id="GORILLAZ" />Gorillaz
+                </label>
+                <label class="filter__checkbox" for="JOHNNY_CASH">
+                    <input data-brand="JOHNNY_CASH" checked="checked" type="checkbox" id="JOHNNY_CASH" />Johnny Cash
                 </label>
                 </div>
               </div>
@@ -189,6 +213,25 @@
                     <div class="item__header"><?php echo $nameId8; ?></div>
                     <div class="item__price"><?php echo $priceId8; ?> ₽</div>
                 </button>
+                </form>
+                <form action="../pages/item.php" method="POST">             
+                <button action="submit" class="vinyls__item GORILLAZ Electronics checked">
+                <input type="text" name="id" value="9" style="display:none">
+                    <div class="item__img"><img src="<?php echo $img1Id9; ?>" alt=""></div>
+                    <div class="item__header"><?php echo $nameId9; ?></div>
+                    <div class="item__price"><?php echo $priceId9; ?> ₽</div>
+                </button>
+                </form>
+                <form action="../pages/item.php" method="POST">
+                <button action="submit" class="vinyls__item JOHNNY_CASH COUNTRY checked">
+                <input type="text" name="id" value="10" style="display:none">
+                    <div class="item__img"><img src="<?php echo $img1Id10; ?>" alt=""></div>
+                    <div class="item__header"><?php echo $nameId10; ?></div>
+                    <div class="item__price"><?php echo $priceId10; ?> ₽</div>
+                </button>
+                </form>
+
+
                 </form>
             </div>
           </div>

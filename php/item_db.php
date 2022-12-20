@@ -34,4 +34,12 @@ $result = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = 8");
 
 $itemId8 = $result->fetch_assoc();
 
+$result = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = 9");
+
+$itemId9 = $result->fetch_assoc();
+
+$result = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = 10");
+
+$itemId10 = $result->fetch_assoc();
+
 $mysql->close();
