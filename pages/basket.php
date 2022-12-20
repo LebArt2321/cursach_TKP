@@ -1,6 +1,6 @@
 <?php
 
-    $mysql = new mysqli('localhost', 'root', '', 'sneakerShop');
+    $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
     $id = $_COOKIE["id"];
 
@@ -58,29 +58,30 @@
                 else{
                     $price = 0;
                     while($userBusket = mysqli_fetch_assoc($result)) {
-                        $mysql = new mysqli('localhost', 'root', '', 'sneakerShop');
+                        $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
                         $sneakerId = $userBusket["sneakerId"];
                         $sneaker = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = '$sneakerId'");
                         $sneaker = $sneaker->fetch_assoc();
                         $price += $sneaker["price"];
                     ?>
                         <div class="busket__item">
+                        <div class="item__name">
+                      <?php echo $sneaker["name"]; ?>
+                    </div>
                         <div class="history__img">
                   <img src="<?php echo $sneaker["img1"]; ?>" alt="">
                   </div>
-                    <div class="item__name">
-                      <?php echo $sneaker["name"]; ?>
-                    </div>
+                    
                         <form action="/php/delete.php" method="POST">
                             <input type="text" name="delete" value=<?php echo $userBusket["id"]?> style="display:none">
                         <div class="delete__item">
-                            <button action="submit">
+                            <button action="submit" class = "knopka1">
                                 Удалить из корзины
                             </button>
                         </div>
                         </form>
                     <?php };
-                    $mysql = new mysqli('localhost', 'root', '', 'sneakerShop');
+                    $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
                     $id = $_COOKIE["id"];
                 
@@ -89,7 +90,7 @@
                     $mysql->close();
                     if(!$userBusket = mysqli_fetch_assoc($result)){
                     ?>
-                    <div class="error">
+                    <div class="lalala">
                         Корзина пустая
                     </div>
                     <?php }

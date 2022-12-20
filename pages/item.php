@@ -1,7 +1,7 @@
 <?php
     $id = $_POST['id'];
 
-    $mysql = new mysqli('localhost', 'root', '', 'sneakerShop');
+    $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
     $result = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = $id");
 
@@ -97,7 +97,7 @@
                       ?>
                       </select>
                       
-                      <button action="submit"
+                      <button action="submit" class = "knopka3"
                       <?php
                       if($colich == 0)
                         echo 'style="display:none"';

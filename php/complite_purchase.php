@@ -1,5 +1,5 @@
 <?php
-    $mysql = new mysqli('localhost', 'root', '', 'sneakerShop');
+    $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
     $id = $_COOKIE["id"];
     $ost = $colich["colich"];
@@ -18,7 +18,7 @@
     $mysql->query("DELETE FROM `purchase`");
 
     $mysql->close();
-    
+
     header("Location: /pages/profile.php");
 
 

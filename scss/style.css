@@ -113,13 +113,14 @@ body {
   width: 100%;
 }
 .wrapper .wrapper__body .body__header {
-  border-radius: 0px;
+  border-radius: 100px;
   padding: 20px;
   height: 150px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 5px double #000000;
   
 }
 .wrapper .wrapper__body .body__header .header__logo-button {
@@ -153,6 +154,8 @@ body {
 .wrapper .wrapper__body .body__header .header__menu .header__lk img {
   width: 50px;
   height: 50px;
+  border-radius: 100px;
+  border: 5px double #000000;
 }
 .wrapper .wrapper__body .body__header .header__bucket {
   cursor: pointer;
@@ -164,6 +167,8 @@ body {
 .wrapper .wrapper__body .body__header .header__bucket img {
   width: 50px;
   height: 50px;
+  border-radius: 100px;
+  border: 5px double #000000;
 }
 .wrapper .body__search {
   margin-top: 50px;
@@ -210,7 +215,7 @@ body {
 .wrapper .body__catalog .catalog__body .catalog__filters .filter {
   width: 150px;
   padding-top: 20px;
-  border-top: 1px solid #005f9e;
+  border-top: 3px solid #005f9e;
   margin-bottom: 30px;
 }
 .wrapper .body__catalog .catalog__body .catalog__filters .filter .filter__header {
@@ -432,6 +437,10 @@ body {
   height: 500px;
 }
 
+.lalala{
+  margin-top: 50px;
+}
+
 .item__body {
   position: relative;
 }
@@ -486,16 +495,63 @@ body {
   flex-direction: column;
 }
 
-.histoy__item {
-  margin-bottom: 20px;
+.history__item {
+  margin-bottom: 70px;
 }
 
 .history__header {
   font-size: 30px;
+  margin-bottom: 70px;
 }
 
 .history__img img {
   width: 150px;
+  margin-bottom: 20px;
+}
+.history__price{
+  width: 150px;
+  margin-bottom: 20px;
+}
+.item__name{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.delete__item{
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+.knopka1{
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 100px;
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(3, 13, 160); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+}
+.basket__complite{
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 100px;
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(3, 13, 160); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+}
+.knopka3{
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 100px;
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(3, 13, 160); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
 }
 
 .exit {

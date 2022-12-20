@@ -4,7 +4,7 @@
         $id = $_POST["id"];
         $colich = $_POST["colich"];
 
-        $mysql = new mysqli('localhost', 'root', '', 'sneakerShop');
+        $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
         $mysql->query("INSERT INTO `purchase` (userId, sneakerId, colich) VALUES ($user, $id, $colich)");
 

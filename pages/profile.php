@@ -1,6 +1,6 @@
 <?php
 
-  $mysql = new mysqli('localhost', 'root', '', 'sneakerShop');
+  $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
   $id = $_COOKIE["id"];
 
@@ -54,23 +54,26 @@
         </div>
         <div class="profile__history">
             <div class="history__header">
-              История ваших покупок
+              История ваших покупок:
             </div>
             <div class="history__body">
               <?php
                 while($userHistory = mysqli_fetch_assoc($history)) {
-                  $mysql = new mysqli('localhost', 'root', '', 'sneakerShop');
+                  $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
                   $sneakerId = $userHistory["sneakerId"];
                   $sneaker = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = '$sneakerId'");
                   $sneaker = $sneaker->fetch_assoc();
               ?>
                 <div class="history__item">
-                  <div class="history__img">
-                  <img src="<?php echo $sneaker["img1"]; ?>" alt="">
-                  </div>
                     <div class="item__name">
                       <?php echo $sneaker["name"]; ?>
                     </div>
+                    <div class="history__img">
+                  <img src="<?php echo $sneaker["img1"]; ?>" alt="">
+                  </div>
+                  <div class="history__price">
+                  <?php echo $sneaker["price"]; ?> ₽
+                  </div>
                 </div>
                 <?php };?>
             </div>

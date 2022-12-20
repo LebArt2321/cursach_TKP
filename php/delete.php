@@ -1,7 +1,7 @@
 <?php
     $delete = $_POST["delete"];
 
-    $mysql = new mysqli('localhost', 'root', '', 'sneakerShop');
+    $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
     $mysql->query("DELETE FROM `purchase` WHERE id = $delete");
 

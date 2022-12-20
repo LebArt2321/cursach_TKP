@@ -13,7 +13,7 @@
     Виниловые пластинки:
     </div>
     <?php
-    $mysql = new mysqli('localhost', 'root', '', 'sneakerShop');
+    $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
     $sneaker = $mysql->query("SELECT * FROM `sneaker`");
 

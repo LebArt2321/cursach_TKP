@@ -4,7 +4,7 @@
     $price = $_POST["price"];
     $colich = $_POST["colich"];
 
-    $mysql = new mysqli('localhost', 'root', '', 'sneakerShop');
+    $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
     $mysql->query("UPDATE `sneaker` SET `price` = '$price' WHERE `id` = '$id'");
 
