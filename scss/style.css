@@ -537,13 +537,13 @@ body {
   outline: none; /* убирать контур в Mozilla */
 }
 .basket__complite{
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 20px;
   border-radius: 100px;
   color: #fff; /* цвет текста */
   text-decoration: none; /* убирать подчёркивание у ссылок */
   user-select: none; /* убирать выделение текста */
-  background: rgb(3, 13, 160); /* фон кнопки */
+  background: black; /* фон кнопки */
   padding: .7em 1.5em; /* отступ от текста */
   outline: none; /* убирать контур в Mozilla */
 }
