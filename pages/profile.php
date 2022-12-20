@@ -60,19 +60,19 @@
               <?php
                 while($userHistory = mysqli_fetch_assoc($history)) {
                   $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
-                  $sneakerId = $userHistory["sneakerId"];
-                  $sneaker = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = '$sneakerId'");
-                  $sneaker = $sneaker->fetch_assoc();
+                  $vinylId = $userHistory["vinylId"];
+                  $vinyl = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = '$vinylId'");
+                  $vinyl = $vinyl->fetch_assoc();
               ?>
                 <div class="history__item">
                     <div class="item__name">
-                      <?php echo $sneaker["name"]; ?>
+                      <?php echo $vinyl["name"]; ?>
                     </div>
                     <div class="history__img">
-                  <img src="<?php echo $sneaker["img1"]; ?>" alt="">
+                  <img src="<?php echo $vinyl["img1"]; ?>" alt="">
                   </div>
                   <div class="history__price">
-                  <?php echo $sneaker["price"]; ?> ₽
+                  <?php echo $vinyl["price"]; ?> ₽
                   </div>
                 </div>
                 <?php };?>

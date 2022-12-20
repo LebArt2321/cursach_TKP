@@ -59,17 +59,17 @@
                     $price = 0;
                     while($userBusket = mysqli_fetch_assoc($result)) {
                         $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
-                        $sneakerId = $userBusket["sneakerId"];
-                        $sneaker = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = '$sneakerId'");
-                        $sneaker = $sneaker->fetch_assoc();
-                        $price += $sneaker["price"];
+                        $vinylId = $userBusket["vinylId"];
+                        $vinyl = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = '$vinylId'");
+                        $vinyl = $vinyl->fetch_assoc();
+                        $price += $vinyl["price"];
                     ?>
                         <div class="busket__item">
                         <div class="item__name">
-                      <?php echo $sneaker["name"]; ?>
+                      <?php echo $vinyl["name"]; ?>
                     </div>
                         <div class="history__img">
-                  <img src="<?php echo $sneaker["img1"]; ?>" alt="">
+                  <img src="<?php echo $vinyl["img1"]; ?>" alt="">
                   </div>
                     
                         <form action="/php/delete.php" method="POST">

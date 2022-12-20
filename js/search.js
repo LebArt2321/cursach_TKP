@@ -1,11 +1,11 @@
-const item = document.querySelectorAll('.sneakers__item');
-const itemName = document.querySelectorAll('.sneakers__item .item__header');
+const item = document.querySelectorAll('.vinyls__item');
+const itemName = document.querySelectorAll('.vinyls__item .item__header');
 
 console.log(itemName);
 
 document.querySelector('#search').oninput = function(){
     let val = this.value.trim();
-    let elasticItems = document.querySelectorAll('.sneakers__item .item__header');
+    let elasticItems = document.querySelectorAll('.vinyls__item .item__header');
 
     if(val!=''){
         elasticItems.forEach(function(elem){

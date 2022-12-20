@@ -9,9 +9,9 @@
 
     while($userBusket = mysqli_fetch_assoc($result)) {
         $userId = $userBusket["userId"];
-        $sneakerId = $userBusket["sneakerId"];
+        $vinylId = $userBusket["vinylId"];
         $colich = $userBusket["colich"];
-        $mysql->query("INSERT INTO `history` (userId, sneakerId, colich) VALUES ($userId, $sneakerId, $colich)");
+        $mysql->query("INSERT INTO `history` (userId, vinylId, colich) VALUES ($userId, $vinylId, $colich)");
         echo ($ost);
     }
 

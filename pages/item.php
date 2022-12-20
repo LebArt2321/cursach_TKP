@@ -3,7 +3,7 @@
 
     $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
-    $result = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = $id");
+    $result = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = $id");
 
     $item = $result->fetch_assoc();
 

@@ -125,9 +125,9 @@
                 </div>
               </div>
             </div>
-            <div class="catalog__sneakers">
+            <div class="catalog__vinyls">
                 <form action="../pages/item.php" method="POST">
-                    <button action="submit" class="sneakers__item zemfira ROCK checked">
+                    <button action="submit" class="vinyls__item zemfira ROCK checked">
                       <input type="text" name="id" value="1" style="display:none">
                         <div class="item__img"><img src="<?php echo $img1Id1; ?>" alt=""></div>
                         <div class="item__header"><?php echo $nameId1; ?></div>
@@ -135,7 +135,7 @@
                     </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
-                  <button action="submit" class="sneakers__item zemfira ROCK checked">
+                  <button action="submit" class="vinyls__item zemfira ROCK checked">
                     <input type="text" name="id" value="2" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id2; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId2; ?></div>
@@ -143,7 +143,7 @@
                   </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
-                  <button action="submit" class="sneakers__item michael_jackson POP checked">
+                  <button action="submit" class="vinyls__item michael_jackson POP checked">
                   <input type="text" name="id" value="3" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id3; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId3; ?></div>
@@ -151,7 +151,7 @@
                 </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
-                <button action="submit" class="sneakers__item tyler RAP checked">
+                <button action="submit" class="vinyls__item tyler RAP checked">
                 <input type="text" name="id" value="4" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id4; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId4; ?></div>
@@ -159,7 +159,7 @@
                 </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
-                <button action="submit" class="sneakers__item tyler RAP checked">
+                <button action="submit" class="vinyls__item tyler RAP checked">
                 <input type="text" name="id" value="5" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id5; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId5; ?></div>
@@ -167,7 +167,7 @@
                 </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
-                <button action="submit" class="sneakers__item AC/DC ROCK checked">
+                <button action="submit" class="vinyls__item AC/DC ROCK checked">
                 <input type="text" name="id" value="6" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id6; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId6; ?></div>
@@ -175,7 +175,7 @@
                 </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
-                <button action="submit" class="sneakers__item QUEEN ROCK checked">
+                <button action="submit" class="vinyls__item QUEEN ROCK checked">
                 <input type="text" name="id" value="7" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id7; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId7; ?></div>
@@ -183,7 +183,7 @@
                 </button>
                 </form>
                 <form action="../pages/item.php" method="POST">
-                <button action="submit" class="sneakers__item ABBA POP checked">
+                <button action="submit" class="vinyls__item ABBA POP checked">
                 <input type="text" name="id" value="8" style="display:none">
                     <div class="item__img"><img src="<?php echo $img1Id8; ?>" alt=""></div>
                     <div class="item__header"><?php echo $nameId8; ?></div>

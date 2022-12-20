@@ -2,35 +2,35 @@
 
 $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
-$result = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = 1");
+$result = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = 1");
 
 $itemId1 = $result->fetch_assoc();
 
-$result = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = 2");
+$result = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = 2");
 
 $itemId2 = $result->fetch_assoc();
 
-$result = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = 3");
+$result = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = 3");
 
 $itemId3 = $result->fetch_assoc();
 
-$result = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = 4");
+$result = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = 4");
 
 $itemId4 = $result->fetch_assoc();
 
-$result = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = 5");
+$result = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = 5");
 
 $itemId5 = $result->fetch_assoc();
 
-$result = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = 6");
+$result = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = 6");
 
 $itemId6 = $result->fetch_assoc();
 
-$result = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = 7");
+$result = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = 7");
 
 $itemId7 = $result->fetch_assoc();
 
-$result = $mysql->query("SELECT * FROM `sneaker` WHERE `id` = 8");
+$result = $mysql->query("SELECT * FROM `vinyl` WHERE `id` = 8");
 
 $itemId8 = $result->fetch_assoc();
 

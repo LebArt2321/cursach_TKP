@@ -15,18 +15,18 @@
     <?php
     $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
-    $sneaker = $mysql->query("SELECT * FROM `sneaker`");
+    $vinyl = $mysql->query("SELECT * FROM `vinyl`");
 
-    while($sneakers = mysqli_fetch_assoc($sneaker)){
+    while($vinyls = mysqli_fetch_assoc($vinyl)){
         ?>
         <form action="/php/change.php" method="POST">
         <div class="admin__item">
-        <div class="name"><?php echo $sneakers["name"];?></div>
-        <input name="id" type="text" value = "<?php echo $sneakers["id"];?>" style="display: none;">
+        <div class="name"><?php echo $vinyls["name"];?></div>
+        <input name="id" type="text" value = "<?php echo $vinyls["id"];?>" style="display: none;">
         <div>Цена</div>
-        <input name="price" type="text" value = "<?php echo $sneakers["price"];?>">
+        <input name="price" type="text" value = "<?php echo $vinyls["price"];?>">
         <div>Кол-во </div>
-        <input name="colich" type="text" value = "<?php echo $sneakers["colich"];?>">
+        <input name="colich" type="text" value = "<?php echo $vinyls["colich"];?>">
        
         </div>
         <button action="submit">Изменить данные</button>

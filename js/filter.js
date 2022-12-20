@@ -1,4 +1,4 @@
-const filterItem = document.querySelectorAll('.sneakers__item');
+const filterItem = document.querySelectorAll('.vinyls__item');
 
 document.querySelector('.brand').addEventListener("change", (event)=>{
     

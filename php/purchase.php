@@ -6,7 +6,7 @@
 
         $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
-        $mysql->query("INSERT INTO `purchase` (userId, sneakerId, colich) VALUES ($user, $id, $colich)");
+        $mysql->query("INSERT INTO `purchase` (userId, vinylId, colich) VALUES ($user, $id, $colich)");
 
         $mysql->close();
 

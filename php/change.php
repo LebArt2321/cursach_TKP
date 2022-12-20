@@ -6,7 +6,7 @@
 
     $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
-    $mysql->query("UPDATE `sneaker` SET `price` = '$price' WHERE `id` = '$id'");
+    $mysql->query("UPDATE `vinyl` SET `price` = '$price' WHERE `id` = '$id'");
 
     $mysql->close();
 
