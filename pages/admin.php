@@ -19,17 +19,20 @@
 
     while($vinyls = mysqli_fetch_assoc($vinyl)){
         ?>
-        <form action="/php/change.php" method="POST">
+        <form action="/php/change.php" method="POST" class = "aaa">
         <div class="admin__item">
-        <div class="name"><?php echo $vinyls["name"];?></div>
+
         <input name="id" type="text" value = "<?php echo $vinyls["id"];?>" style="display: none;">
+
+        <div>Название</div>
+        <input name="name" type="text" value = "<?php echo $vinyls["name"];?>">  
         <div>Цена</div>
         <input name="price" type="text" value = "<?php echo $vinyls["price"];?>">
         <div>Кол-во </div>
         <input name="colich" type="text" value = "<?php echo $vinyls["colich"];?>">
        
         </div>
-        <button action="submit">Изменить данные</button>
+        <button action="submit" class = "zzz">Изменить данные</button>
         </form>
 
     <?php
@@ -37,7 +40,7 @@
     ?>
     </div>
 <form action="../php/exit.php">
-            <button class="exit">Выйти из профиля</button>
+            <button class="exit2">Выйти из профиля</button>
           </form>
 </body>
 </html>

@@ -6,7 +6,17 @@
 
     $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
 
+    $mysql->query("UPDATE `vinyl` SET `name` = '$name' WHERE `id` = '$id'");
+
+    $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
+
     $mysql->query("UPDATE `vinyl` SET `price` = '$price' WHERE `id` = '$id'");
+
+    $mysql = new mysqli('localhost', 'root', '', 'vilyl_shop');
+
+    $mysql->query("UPDATE `vinyl` SET `colich` = '$colich' WHERE `id` = '$id'");
+
+
 
     $mysql->close();
 

@@ -65,6 +65,7 @@
                         $price += $vinyl["price"];
                     ?>
                         <div class="busket__item">
+                        <div class = "zazaza">
                         <div class="item__name">
                       <?php echo $vinyl["name"]; ?>
                     </div>
@@ -75,6 +76,8 @@
                         <form action="/php/delete.php" method="POST">
                             <input type="text" name="delete" value=<?php echo $userBusket["id"]?> style="display:none">
                         <div class="delete__item">
+                    </div>
+                    </div>
                             <button action="submit" class = "knopka1">
                                 Удалить из корзины
                             </button>
